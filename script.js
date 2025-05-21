@@ -73,7 +73,7 @@ async function fetchWeatherForCity(city) {
 
 async function getWeatherForCities(cities) {
   const resultDiv = document.getElementById("weatherResult");
-  resultDiv.innerHTML = "Fetching weather data...";
+  resultDiv.innerHTML = "Fetching weather data....";
   const results = await Promise.all(cities.map(fetchWeatherForCity));
   resultDiv.innerHTML = results.join("");
 }
