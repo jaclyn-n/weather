@@ -1,0 +1,35 @@
+/**
+ * Fetches and displays current weather data for a city entered by the user.
+ * 
+ * This function is triggered by a button click. It reads the input from
+ * an HTML input field with ID `cityInput`, trims whitespace, and validates
+ * the input. It then uses the Open-Meteo Geocoding API to fetch coordinates
+ * for the city and retrieves real-time weather data from the Open-Meteo Forecast API.
+ * The results are displayed inside the HTML element with ID `weatherResult`.
+ *
+ * @function getWeatherNew
+ *
+ * @returns {void} - This function does not return a value but updates the DOM directly.
+ *
+ * @example
+ * // Example usage: triggered by a button click in HTML
+ * <button onclick="getWeatherNew()">Get Weather</button>
+ * 
+ * // HTML input field
+ * <input type="text" id="cityInput" placeholder="Enter a city" />
+ * 
+ * // Output div
+ * <div id="weatherResult"></div>
+ *
+ * // Expected output after entering "London":
+ * // London, United Kingdom
+ * // Temperature: 17°C
+ * // Wind Speed: 12 km/h
+ */
+async function getWeatherNew() {
+  // Function body...
+}
+*/ edge cases
+// Inputs with accents or non-English letters, e.g., "München", "São Paulo".
+
+Expected: Should correctly fetch data if available.
